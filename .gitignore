@@ -1,0 +1,30 @@
+# Archivos y carpetas de Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Carpetas de compilación
+bin/
+obj/
+Debug/
+Release/
+
+# Paquetes NuGet descargados
+packages/
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Configuración local
+*.userprefs
+
+# Archivos de compilación intermedios
+*.dbmdl
+*.pdb
+
+# Archivos de configuración de IDE
+*.VC.db
+*.VC.opendb
