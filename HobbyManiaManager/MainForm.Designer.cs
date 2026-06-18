@@ -90,7 +90,7 @@
             this.btnAlquilar.Name = "btnAlquilar";
             this.btnAlquilar.Size = new System.Drawing.Size(150, 96);
             this.btnAlquilar.TabIndex = 4;
-            this.btnAlquilar.Text = "Aluilar/Devolver Película";
+            this.btnAlquilar.Text = "Alquilar/Devolver Película";
             this.btnAlquilar.UseVisualStyleBackColor = true;
             this.btnAlquilar.Click += new System.EventHandler(this.btnAlquilar_Click);
             // 

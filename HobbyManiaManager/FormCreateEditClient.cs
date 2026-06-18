@@ -24,6 +24,8 @@ namespace HobbyManiaManager
             customerRepository = CustomersRepository.Instance;
             this.formClientes = formClientes;
             this.customer = customer;
+
+         
         }
 
         private void FormCreateEditClient_Load(object sender, EventArgs e)
@@ -32,6 +34,7 @@ namespace HobbyManiaManager
 
             if (customer != null)
             {
+                
                 this.Text = "Editar Cliente";
                 textBoxName.Text = customer.Name;
                 textBoxEmail.Text = customer.Email;
@@ -39,6 +42,15 @@ namespace HobbyManiaManager
                 pictureBox1.ImageLocation = customer.Avatar;
                 btnCrear.Text = "Actualizar Cliente";
             }
+
+            textBoxName.TextChanged += (s, ev) => ValidateFields();
+            textBoxEmail.TextChanged += (s, ev) => ValidateFields();
+            textBoxPhoneNumber.TextChanged += (s, ev) => ValidateFields();
+
+            ValidateFields(); 
+
+
+
 
         }
 
@@ -60,6 +72,7 @@ namespace HobbyManiaManager
                     MessageBox.Show("Por favor campos obligatorios, deben de estar rellenados");
                 }
                 else {
+
 
                     var newc = new Customer(Customer.NextCustomerId, customerRepository.Generate(), textBoxName.Text, textBoxEmail.Text, textBoxPhoneNumber.Text, DateTime.Now);
                     customerRepository.Add(newc);
@@ -91,6 +104,14 @@ namespace HobbyManiaManager
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ValidateFields()
+        {
+            btnCrear.Enabled =
+                !string.IsNullOrWhiteSpace(textBoxName.Text) &&
+                !string.IsNullOrWhiteSpace(textBoxEmail.Text) &&
+                !string.IsNullOrWhiteSpace(textBoxPhoneNumber.Text);
         }
     }
 }
