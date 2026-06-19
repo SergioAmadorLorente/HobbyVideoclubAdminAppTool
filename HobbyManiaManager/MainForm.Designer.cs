@@ -113,9 +113,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HobbyManiaManager.Properties.Resources.Videoclub;
-            this.pictureBox1.Location = new System.Drawing.Point(465, 70);
+            this.pictureBox1.Location = new System.Drawing.Point(474, 70);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(267, 227);
+            this.pictureBox1.Size = new System.Drawing.Size(258, 227);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
