@@ -52,6 +52,7 @@
             // 
             // btnClientes
             // 
+            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnClientes.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnClientes.Location = new System.Drawing.Point(51, 19);
             this.btnClientes.Name = "btnClientes";
@@ -64,16 +65,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.label1.Location = new System.Drawing.Point(142, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(411, 33);
+            this.label1.Size = new System.Drawing.Size(409, 31);
             this.label1.TabIndex = 2;
             this.label1.Text = "HobbyVideoClub AdminApp Tool";
             // 
             // btnPeliculas
             // 
+            this.btnPeliculas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnPeliculas.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnPeliculas.Location = new System.Drawing.Point(252, 19);
             this.btnPeliculas.Name = "btnPeliculas";
@@ -85,6 +86,7 @@
             // 
             // btnAlquilar
             // 
+            this.btnAlquilar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.btnAlquilar.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnAlquilar.Location = new System.Drawing.Point(158, 121);
             this.btnAlquilar.Name = "btnAlquilar";
@@ -106,7 +108,7 @@
             this.groupBox1.Size = new System.Drawing.Size(447, 227);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Bienvenido Rafa:";
+            this.groupBox1.Text = "Bienvenido al AdminTool:";
             // 
             // pictureBox1
             // 
@@ -124,14 +126,14 @@
             this.label2025.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label2025.Location = new System.Drawing.Point(560, 377);
             this.label2025.Name = "label2025";
-            this.label2025.Size = new System.Drawing.Size(177, 17);
+            this.label2025.Size = new System.Drawing.Size(182, 17);
             this.label2025.TabIndex = 7;
-            this.label2025.Text = "R 2025 All Rights reserved";
+            this.label2025.Text = "R 2026 All Rights Reserved";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(111, 358);
+            this.label2.Location = new System.Drawing.Point(60, 355);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(432, 13);
             this.label2.TabIndex = 8;
