@@ -50,16 +50,20 @@
             this.textBoxnombrecliente = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.labellatieneel = new System.Windows.Forms.Label();
+            this.pictureBoxCliente = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPeli = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPeli)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(106, 9);
+            this.label1.Location = new System.Drawing.Point(343, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(288, 29);
             this.label1.TabIndex = 0;
@@ -68,7 +72,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(347, 48);
+            this.label5.Location = new System.Drawing.Point(671, 48);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 6;
@@ -76,15 +80,15 @@
             // 
             // textBoxNotas
             // 
-            this.textBoxNotas.Location = new System.Drawing.Point(350, 65);
+            this.textBoxNotas.Location = new System.Drawing.Point(674, 65);
             this.textBoxNotas.Multiline = true;
             this.textBoxNotas.Name = "textBoxNotas";
-            this.textBoxNotas.Size = new System.Drawing.Size(173, 74);
+            this.textBoxNotas.Size = new System.Drawing.Size(168, 102);
             this.textBoxNotas.TabIndex = 7;
             // 
             // btnAlquilar
             // 
-            this.btnAlquilar.Location = new System.Drawing.Point(50, 427);
+            this.btnAlquilar.Location = new System.Drawing.Point(345, 446);
             this.btnAlquilar.Name = "btnAlquilar";
             this.btnAlquilar.Size = new System.Drawing.Size(94, 47);
             this.btnAlquilar.TabIndex = 8;
@@ -94,7 +98,7 @@
             // 
             // btnDevolverPeli
             // 
-            this.btnDevolverPeli.Location = new System.Drawing.Point(354, 427);
+            this.btnDevolverPeli.Location = new System.Drawing.Point(649, 446);
             this.btnDevolverPeli.Name = "btnDevolverPeli";
             this.btnDevolverPeli.Size = new System.Drawing.Size(98, 47);
             this.btnDevolverPeli.TabIndex = 9;
@@ -104,7 +108,7 @@
             // 
             // btnListaRental
             // 
-            this.btnListaRental.Location = new System.Drawing.Point(448, 3);
+            this.btnListaRental.Location = new System.Drawing.Point(746, 3);
             this.btnListaRental.Name = "btnListaRental";
             this.btnListaRental.Size = new System.Drawing.Size(75, 48);
             this.btnListaRental.TabIndex = 13;
@@ -115,7 +119,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::HobbyManiaManager.Properties.Resources.nook;
-            this.pictureBox2.Location = new System.Drawing.Point(270, 438);
+            this.pictureBox2.Location = new System.Drawing.Point(565, 457);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(78, 36);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -125,7 +129,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HobbyManiaManager.Properties.Resources.ok;
-            this.pictureBox1.Location = new System.Drawing.Point(150, 438);
+            this.pictureBox1.Location = new System.Drawing.Point(445, 457);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(59, 36);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,9 +141,9 @@
             this.listBoxClientes.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxClientes.FormattingEnabled = true;
             this.listBoxClientes.ItemHeight = 14;
-            this.listBoxClientes.Location = new System.Drawing.Point(15, 65);
+            this.listBoxClientes.Location = new System.Drawing.Point(223, 65);
             this.listBoxClientes.Name = "listBoxClientes";
-            this.listBoxClientes.Size = new System.Drawing.Size(316, 88);
+            this.listBoxClientes.Size = new System.Drawing.Size(437, 102);
             this.listBoxClientes.TabIndex = 14;
             this.listBoxClientes.SelectedIndexChanged += new System.EventHandler(this.listBoxClientes_SelectedIndexChanged);
             // 
@@ -148,9 +152,9 @@
             this.listBoxPeliculas.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxPeliculas.FormattingEnabled = true;
             this.listBoxPeliculas.ItemHeight = 14;
-            this.listBoxPeliculas.Location = new System.Drawing.Point(15, 170);
+            this.listBoxPeliculas.Location = new System.Drawing.Point(223, 189);
             this.listBoxPeliculas.Name = "listBoxPeliculas";
-            this.listBoxPeliculas.Size = new System.Drawing.Size(508, 144);
+            this.listBoxPeliculas.Size = new System.Drawing.Size(619, 144);
             this.listBoxPeliculas.TabIndex = 15;
             this.listBoxPeliculas.SelectedIndexChanged += new System.EventHandler(this.listBoxPeliculas_SelectedIndexChanged);
             // 
@@ -191,16 +195,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 154);
+            this.label2.Location = new System.Drawing.Point(220, 173);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 13);
             this.label2.TabIndex = 20;
             this.label2.Text = "Lista de Películas:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 48);
+            this.label3.Location = new System.Drawing.Point(220, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 13);
             this.label3.TabIndex = 21;
@@ -250,7 +255,7 @@
             this.groupBox1.Controls.Add(this.labelidpelicula);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBoxnombrepelicula);
-            this.groupBox1.Location = new System.Drawing.Point(12, 321);
+            this.groupBox1.Location = new System.Drawing.Point(266, 339);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(511, 80);
             this.groupBox1.TabIndex = 26;
@@ -261,18 +266,38 @@
             // 
             this.labellatieneel.AutoSize = true;
             this.labellatieneel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labellatieneel.Location = new System.Drawing.Point(50, 408);
+            this.labellatieneel.Location = new System.Drawing.Point(345, 427);
             this.labellatieneel.Name = "labellatieneel";
             this.labellatieneel.Size = new System.Drawing.Size(116, 13);
             this.labellatieneel.TabIndex = 27;
             this.labellatieneel.Text = "labelQuienPoseeLaPeli";
             this.labellatieneel.Visible = false;
             // 
+            // pictureBoxCliente
+            // 
+            this.pictureBoxCliente.Location = new System.Drawing.Point(33, 48);
+            this.pictureBoxCliente.Name = "pictureBoxCliente";
+            this.pictureBoxCliente.Size = new System.Drawing.Size(144, 171);
+            this.pictureBoxCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCliente.TabIndex = 28;
+            this.pictureBoxCliente.TabStop = false;
+            // 
+            // pictureBoxPeli
+            // 
+            this.pictureBoxPeli.Location = new System.Drawing.Point(22, 263);
+            this.pictureBoxPeli.Name = "pictureBoxPeli";
+            this.pictureBoxPeli.Size = new System.Drawing.Size(184, 185);
+            this.pictureBoxPeli.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxPeli.TabIndex = 29;
+            this.pictureBoxPeli.TabStop = false;
+            // 
             // FormAlquilarDevolver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 486);
+            this.ClientSize = new System.Drawing.Size(859, 500);
+            this.Controls.Add(this.pictureBoxPeli);
+            this.Controls.Add(this.pictureBoxCliente);
             this.Controls.Add(this.labellatieneel);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label3);
@@ -294,6 +319,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPeli)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,5 +350,7 @@
         private System.Windows.Forms.TextBox textBoxnombrecliente;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label labellatieneel;
+        private System.Windows.Forms.PictureBox pictureBoxCliente;
+        private System.Windows.Forms.PictureBox pictureBoxPeli;
     }
 }

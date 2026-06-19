@@ -129,7 +129,7 @@ namespace HobbyManiaManager
                 var movieId = int.Parse(id);
                 var movie = moviesRepository.GetById(movieId);
 
-                pictureBoxPelicula.SizeMode = PictureBoxSizeMode.Zoom; // Asegura que se mantenga la relación de aspecto  
+                pictureBoxPelicula.SizeMode = PictureBoxSizeMode.Zoom; //Para relacion de aspecto de la imagen  
                 pictureBoxPelicula.ImageLocation = movie.PosterPathUrl;
                 textBoxSinopsis.Text = movie.Overview;
             }

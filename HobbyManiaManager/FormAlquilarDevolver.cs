@@ -159,6 +159,8 @@ namespace HobbyManiaManager
         {
             var peli = GetSelectedMovie();
 
+            pictureBoxPeli.ImageLocation = peli.PosterPathUrl;
+
             textBoxidpelicula.Text = peli.Id.ToString();
             textBoxnombrepelicula.Text = peli.OriginalTitle;
 
@@ -187,7 +189,10 @@ namespace HobbyManiaManager
             if(listBoxClientes.SelectedItem != null)
             {
                 var cliente = GetSelectedUser();
-             textBoxidcliente.Text = cliente.Id.ToString();
+
+               pictureBoxCliente.ImageLocation = cliente.Avatar;
+
+               textBoxidcliente.Text = cliente.Id.ToString();
                textBoxnombrecliente.Text = cliente.Name;
             }
             else
@@ -195,6 +200,11 @@ namespace HobbyManiaManager
                textBoxidcliente.Text = "";
                textBoxnombrecliente.Text = "";
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
