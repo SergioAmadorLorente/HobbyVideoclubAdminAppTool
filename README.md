@@ -39,7 +39,7 @@ Además, incluye la visualización de información detallada de cada película c
 ##  Tecnologías utilizadas
 
 - C#
-- Visual Studio
+- Visual Studio 2022 o superior
 - Programación orientada a objetos (POO)
 - Estructuras CRUD
 - (Opcional) Archivos / bases de datos si aplica
@@ -48,12 +48,17 @@ Además, incluye la visualización de información detallada de cada película c
 
 ## Vista del sistema
 
-*(Aquí puedes agregar capturas de pantalla de tu aplicación)*
+![Menú principal](HobbyManiaManager/Assets/home.PNG)
 
----
+![Alquiler Película](HobbyManiaManager/Assets/alqui.PNG)
 
-##  Cómo ejecutar el proyecto
+![Informes clientes activos](HobbyManiaManager/Assets/informeclientesactivos.PNG)
 
-1. Clonar el repositorio:
-```bash
-git clone https://github.com/tuusuario/tu-repo.git
+![Informe de Película](HobbyManiaManager/Assets/informedepelicula.PNG)
+
+![Lista de Clientes](HobbyManiaManager/Assets/listadeclientes.PNG)
+
+![Perfil de Película](HobbyManiaManager/Assets/peli.PNG)
+
+
+
